@@ -1,0 +1,5 @@
+sift = cv2.SIFT_create()
+keypoints1, descriptors1 = sift.detectAndCompute(img1, None)
+keypoints5, descriptors5 = sift.detectAndCompute(img5, None)
+img1_with_keypoints = cv2.drawKeypoints(img1, keypoints1, img1)
+img5_with_keypoints = cv2.drawKeypoints(img5, keypoints5, img5)
